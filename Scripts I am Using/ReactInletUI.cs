@@ -27,7 +27,7 @@ namespace ExciteOMeter
         public CubeHeart cubeheart;
 
 
-        public float getHeart; 
+        public float BetHeart; 
         
         private bool currentlyConnected = false;
 
@@ -99,9 +99,10 @@ namespace ExciteOMeter
            
             if(type == dataType && valueText != null)
             {
-                float BetHeart = value;
-               
-                Debug.Log(BetHeart);
+                //float BetHeart = value;
+                BetHeart = value;
+
+               // Debug.Log(BetHeart);
                 valueText.text = value.ToString("F0");
 
                 if (onlineLine != null)

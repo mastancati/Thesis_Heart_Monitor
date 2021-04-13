@@ -40,7 +40,7 @@ namespace ExciteOMeter {
         public void Start()
         {
             reactScript = reactGO.AddComponent<ReactInletUI>();
-           // Debug.Log(reactScript.getHeart);
+            //Debug.Log(reactScript.BetHeart);
 
             PrintHeartRate printheartrate = CubeTest.GetComponent<PrintHeartRate>();
             printheartrate.GetComponent<ExciteOMeter.ReactInletUI>(); 
@@ -57,8 +57,8 @@ namespace ExciteOMeter {
         // Update is called once per frame
         public void Update()
     {
-           // //PrintHeartRate printheartrate = CubeTest.GetComponent<PrintHeartRate>();
-            
+            // //PrintHeartRate printheartrate = CubeTest.GetComponent<PrintHeartRate>();
+            Debug.Log(reactScript.BetHeart);
             PrintHeartRate printheartrate = CubeTest.AddComponent<PrintHeartRate>();
             {
 
